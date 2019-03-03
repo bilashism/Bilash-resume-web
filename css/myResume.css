@@ -1,0 +1,510 @@
+/* 
+Theme Name: Professional Resume for Front-End Web Developers
+Author: Md. Taifuzzaman Bilash
+Details: Professional personal resume theme for Web Developer
+*/
+
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/Raleway-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato-Regular.ttf) format(truetype);
+}
+
+*,
+::before,
+::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: raleway, lato, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 0;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+    -webkit-box-shadow: -1px 2px 15px rgba(128, 128, 128, 0.7);
+    box-shadow: -1px 2px 15px rgba(128, 128, 128, 0.7);
+}
+
+.row {
+    margin: 0 -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.col {
+    padding: 0 15px;
+}
+
+.img-res {
+    width: 100%;
+    display: block;
+}
+
+.my-resume {
+    background-color: rgba(253, 253, 253, 0.5);
+}
+
+
+/* Left column starts */
+
+.col-left {
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+    background-color: #2b3a51;
+    color: #ffffff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.dp {
+    padding: 75px 0 40px 0;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.about-ct,
+.contact-ct,
+.int-ct,
+.hobby-ct {
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    width: 112px;
+    height: 1px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+.about-ct .line:first-of-type {
+    padding-top: 15px;
+}
+
+.line {
+    padding: 5px 0;
+}
+
+.line .label {
+    padding-right: 10px;
+}
+
+.number {
+    font-family: lato, sans-serif;
+}
+
+.contact-ct .title::after {
+    width: 98px;
+}
+
+.contact-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-line:first-of-type {
+    padding-top: 15px;
+}
+
+.icon-lg {
+    font-size: 2.5rem;
+    padding-right: 10px;
+}
+
+.icons {
+    font-size: 2rem;
+}
+
+.phn {
+    font-size: 1.65rem;
+    -webkit-transform: rotate(100deg);
+    transform: rotate(100deg);
+}
+
+.msg {
+    font-size: 1.7rem;
+}
+
+.title:nth-of-type(3)::after {
+    width: 137px;
+}
+
+.my--wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.int-wrap {
+    padding-top: 15px;
+}
+
+.int-left,
+.int-right {
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
+}
+
+.hobby-ct .title::after {
+    width: 90px;
+}
+
+.hob-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.hob-icons i {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+
+
+/* Right column starts */
+
+.col-right {
+    -ms-flex-preferred-size: 65%;
+    flex-basis: 65%;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.pro-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #2b3a51;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 2.81rem;
+    margin-left: -2px;
+}
+
+.obj-wrap {
+    padding: 20px 0;
+}
+
+p.desc {
+    padding-top: 15px;
+}
+
+.col-right .title::after {
+    border-color: #000000;
+    width: 199px;
+}
+
+.edu-tech-wrap {
+    padding: 20px 0;
+}
+
+.edu,
+.tech {
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+}
+
+.edu .title::after {
+    width: 120px;
+}
+
+.tech .title::after {
+    width: 275px;
+}
+
+.tech-pro-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.tech-pro-wrap .tech-item {
+    padding: 0 5px 5px 0;
+    font-size: .95rem;
+}
+
+.degree .deg-des {
+    padding-bottom: 5px;
+}
+
+.tech>.degree {
+    padding-top: 20px;
+}
+
+.cert-lang-wrap .degree {
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+}
+
+.lang-wrap {
+    padding: 0 0 5px;
+}
+
+.lang-wrap span {
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+}
+
+.lang-wrap .lang-lvl {
+    text-align: right;
+}
+
+.xp-wrap {
+    padding: 30px 0 10px;
+}
+
+.xp-wrap .title::after {
+    width: 127px;
+}
+
+.xp {
+    padding-bottom: 20px;
+}
+
+.xpertise-skill-wrap {
+    padding: 15px 0;
+}
+
+.xpertise .cus-line:first-of-type,
+.skills .cus-line:first-of-type {
+    padding-top: 15px;
+}
+
+.xpertise,
+.skills {
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+}
+
+.xpertise .title::after {
+    width: 110px;
+}
+
+.skills .title::after {
+    width: 72px;
+}
+
+.mysp {
+    -ms-flex-preferred-size: 85%;
+    flex-basis: 85%;
+    font-size: .9rem;
+}
+
+.circles {
+    -ms-flex-preferred-size: 14%;
+    flex-basis: 14%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.circle {
+    width: 7px;
+    height: 7px;
+    background-color: #232323;
+    border-radius: 50%;
+}
+
+.cless {
+    background-color: #b1b1b1;
+}
+
+.tools-wrap {
+    padding: 20px 0 50px;
+}
+
+.tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.tools-wrap .title::after {
+    width: 70px;
+}
+
+.tools li {
+    font-size: 1.05rem;
+    border-right: 2px solid #000;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.tools li:first-of-type {
+    padding-left: 0;
+}
+
+.tools li:last-of-type {
+    padding-right: 0;
+    border-right: none;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 949px) {
+    .name {
+        font-size: 2.61rem;
+    }
+    .edu,
+    .tech {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .name {
+        font-size: 2.22rem;
+    }
+    .xpertise,
+    .skills {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .name {
+        font-size: 1.95rem;
+    }
+    .cert-lang-wrap .degree {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .contact-line>div {
+        flex-basis: 100%;
+    }
+    .int-left,
+    .int-right {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .hob-wrap .hob-icons {
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .name {
+        font-size: 1.55rem;
+    }
+    .tools {
+        display: block;
+    }
+    .tools li {
+        border: none;
+        text-align: left;
+        padding: 0 0 10px;
+    }
+    .tools li:first-of-type {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .name {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 533px) {
+    .circles {
+        flex-wrap: nowrap;
+        padding: 5px 0;
+    }
+    .tech .title::after {
+        width: 155px;
+    }
+    .pro-title::after {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 454px) {
+    .obj-wrap .title::after {
+        width: 113px;
+    }
+}
